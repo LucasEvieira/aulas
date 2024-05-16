@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    int numerosInt [5] = {0,0,0,0,0};
+    int numerosPar [5] = {0,0,0,0,0};
+    int numerosImp [5] = {0,0,0,0,0};
+    
+    int i;
+    
+    for (i = 0; i <= 4; i++){
+        printf("Digite um valor: ");
+        scanf("%i", &numerosInt[i]);
+        
+        if (numerosInt[i] % 2 == 0){
+            scanf("%i",&numerosPar[i]);
+        }
+        else{
+            scanf("%i", &numerosImp[i]);
+        }
+    }
+    
+    for (i = 0; i <= 5; i++){
+      printf("%i",numerosInt[i]);
+    }
+    for(i = 0; i <= 5; i++){
+        printf("%i",numerosPar[i]);
+    }
+    for(i = 0; i <= 5; i++){
+        printf("%i",numerosImp[i]);
+    }
+}
