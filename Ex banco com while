@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int
+main ()
+{
+  int opcao, saque, deposito;
+  int saldo = 0;
+
+  
+
+  while (opcao != 4){
+      
+      printf("Digite uma opção (1 - Saldo, 2 - Saque, 3 - Deposito, 4 - Sair): ");
+      scanf ("%i", &opcao);
+      
+      
+      if (opcao == 1){
+           printf("Seu saldo é: %i\n", saldo);
+      }
+      else if (opcao == 2){
+          printf("Digite o valor do saque: ");
+          scanf("%i", &saque);
+          saldo -= saque;
+          printf("Saque de %i realizado. Seu saldo atual é: %i\n", saque, saldo);
+      }
+      else if (opcao == 3){
+          printf("Digite o valor do deposito: ");
+          scanf("%i", &deposito);
+          saldo += deposito;
+          printf("Saque de %i realizado. Seu saldo atual é: %i\n", saque, saldo);
+      }
+      else{
+          printf("Voce saiu");
+      }
+  }
+
+}
